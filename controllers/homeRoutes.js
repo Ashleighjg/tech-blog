@@ -8,9 +8,8 @@ router.get('/', async (req, res) => {
     const postData = await Post.findAll({
       include: [
         {
-          model: User,
-          attributes: ['username'],
-        },
+          model: User
+        }
       ],
     });
 
@@ -27,7 +26,7 @@ router.get('/', async (req, res) => {
   }
 });
 
-router.get('/post/:id', async (req, res) => {
+/*router.get('/post/:id', async (req, res) => {
   try {
     const postData = await Post.findByPk(req.params.id, {
       include: [
@@ -48,6 +47,7 @@ router.get('/post/:id', async (req, res) => {
     res.status(500).json(err);
   }
 });
+*/
 
 // Use withAuth middleware to prevent access to route
 router.get('/dashboard', withAuth, async (req, res) => {

@@ -1,15 +1,15 @@
 <!-- Loop over each object in the projects array -->
+<h1 class="content-subhead">Recent Posts</h1>
 {{#each posts as |post| }}
  
 
                 <section class="post">
                     <header class="post-header">
-                        <img width="48" height="48" alt="Eric Ferraiuolo&#x27;s avatar" class="post-avatar" src="/img/common/ericf-avatar.png">
 
                         <h2 class="post-title"><a href="/post/{{post.id}}">{{post.title}}</a></h2>
 
                         <p class="post-meta">
-                            By <a class="post-author" href="#">{{post.user.username}}o{{format_date post.date_created}}</a>
+                            By {{post.user.username}} on {{format_date post.date_created}}
                         </p>
                     </header>
 
