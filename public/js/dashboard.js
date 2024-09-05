@@ -1,35 +1,4 @@
 
-/*
-let postTitle;
-let postContent;
-let commentBtn;
-let submitCmt
-let deleteBtn;
-let editBtn;
-
-if (window.location.pathname === '/dashboard') {
- 
-  postTitle = document.querySelector('.post-title');
-  postContent = document.querySelector('.post-content');
-  commentBtn = document.querySelector('.');
-  deleteBtn = document.querySelector('.delete-post');
-  submitCmt = document.querySelector('.submitcmt-btn');
-  editBtn = document.querySelector('.edit-btn');
-}
-
-// Show an element
-const show = (elem) => {
-  elem.style.display = 'inline';
-};
-
-// Hide an element
-const hide = (elem) => {
-  elem.style.display = 'none';
-};
-
-// activeNote is used to keep track of the note in the textarea
-let activeNote = {};
-*/
 const newFormHandler = async (event) => {
   event.preventDefault();
 
