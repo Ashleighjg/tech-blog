@@ -36,6 +36,22 @@
                             {{post.content}}
                         </p>
                     </div>
+      
+        <form class="comment-form" data-id="{{post.id}}">
+          <div>
+            <textarea class="col-md-6" id='comment_content' name="comment-content"></textarea>
+          </div>
+          <div>
+            <button class="button is-warning ml-5 mb-5" type="submit">Add Comment</button>
+          </div>
+        </form>
+       
+        </div>
+        {{#each comments as |comment|}}
+        <div style="border-style: solid;">
+        <p>{{comment.comment_content}}</p>
+        </div>
+        {{/each}}
       </div>
       <div class="col-md-4">
         <button class="btn btn-sm btn-danger" data-id="{{post.id}}">DELETE</button>
