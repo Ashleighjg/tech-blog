@@ -13,6 +13,7 @@ const newFormHandler = async (event) => {
         'Content-Type': 'application/json',
       },
     });
+    
 
     if (response.ok) {
       document.location.replace('/dashboard');
@@ -39,7 +40,7 @@ const delButtonHandler = async (event) => {
 };
 
 document
-  .querySelector('.new-post-form')
+  .querySelector('#new-post-form')
   .addEventListener('submit', newFormHandler);
 
 document
